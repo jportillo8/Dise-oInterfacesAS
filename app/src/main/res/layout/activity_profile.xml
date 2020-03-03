@@ -9,7 +9,7 @@
     <ImageView
         android:layout_gravity="center"
         android:layout_width="160dp"
-        android:layout_height="120"
+        android:layout_height="120dp"
         android:src="@drawable/icono_platzi"></ImageView>
     <EditText
         android:layout_margin="12dp"
