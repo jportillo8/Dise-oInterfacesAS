@@ -2,18 +2,39 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    android:background="@color/colorPrimary">
+    android:background="@android:color/white">
 
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Hola Platzi curso de interfaces"></TextView>
 
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_width="160dp"
+        android:layout_height="120"
+        android:src="@drawable/icono_platzi"></ImageView>
     <EditText
-        android:hint="Escribe tu nombre"
-        android:layout_width="wrap_content"
+        android:layout_margin="12dp"
+        android:drawablePadding="12dp"
+        android:drawableStart="@drawable/vector_person"
+        android:hint="@string/hint_usuario"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"></EditText>
+    <EditText
+        android:layout_margin="12dp"
+        android:drawablePadding="12dp"
+        android:drawableStart="@drawable/vector_lock"
+        android:hint="@string/hint_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></EditText>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></Space>
+    <Button
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/button_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></Button>
 
 </LinearLayout>
