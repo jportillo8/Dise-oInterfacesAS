@@ -5,14 +5,14 @@
     android:layout_height="match_parent"
     android:theme="@style/AppTheme.Red">
 
-    <ImageView
-        android:id="@+id/ivLoginLogo"
-        android:layout_width="@dimen/width_logo"
-        android:layout_height="@dimen/hight_logo"
-        android:src="@drawable/icono_platzi"
-        app:layout_constraintEnd_toEndOf="parent"
+    <include
+        layout="@layout/merge_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></ImageView>
+        app:layout_constraintEnd_toEndOf="parent"
+        ></include>
 
     <EditText
         android:id="@+id/etLoginUsername"
